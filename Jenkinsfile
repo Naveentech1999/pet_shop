@@ -5,7 +5,15 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone your GitHub repository
-                 git branch: 'main', url: 'https://github.com/Naveentech1999/pet_shop.git'
+                git branch: 'main', url: 'https://github.com/Naveentech1999/pet_shop.git'
+            }
+        }
+
+        stage('Set Script Permissions') {
+            steps {
+                // Set execute permissions for the scripts
+                sh "chmod +x ./Scripts/myscript.sh"
+                sh "chmod +x ./Scripts/myscript1.sh"
             }
         }
 
