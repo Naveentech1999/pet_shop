@@ -5,8 +5,8 @@ node {
         }
 
         // Set execute permissions for the scripts
-        sh "chmod +x ./Scripts/myscript.sh"
-        sh "chmod +x ./Scripts/myscript1.sh"
+       // sh "chmod +x ./Scripts/myscript.sh"
+      //  sh "chmod +x ./Scripts/myscript1.sh"
 
         stage('Run Script 1') {
             def script1ExitCode = sh(script: './Scripts/myscript.sh', returnStatus: true)
