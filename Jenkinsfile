@@ -3,9 +3,7 @@ node {
         stage('Clone Repository') {
             git branch: 'main', url: 'https://github.com/Naveentech1999/Scripted-pipeline.git'
         }
-
-       
-
+        
         stage('Run Script 1') {
             def script1ExitCode = sh(script: './Scripts/myscript.sh', returnStatus: true)
 
