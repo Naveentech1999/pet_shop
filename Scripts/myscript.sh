@@ -1,2 +1,4 @@
 #!/bin/bash
-ls -la | awk '{print $9}'
+
+echo "Hello, World!"
+

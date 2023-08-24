@@ -1,2 +1,5 @@
 #!/bin/bash
-ls -la | awk '{print $8}'
+
+echo "This is a Jenkins-related message."
+echo "Jenkins is an automation server that helps with continuous integration and continuous delivery."
+
