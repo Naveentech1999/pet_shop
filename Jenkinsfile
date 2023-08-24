@@ -27,10 +27,13 @@ node {
                 }
             }
         }
-    } catch (Exception e) {
+    } 
+    
+    catch (Exception e) {
         currentBuild.result = 'FAILURE'
         error "An error occurred: ${e.getMessage()}"
-    } finally {
+    } 
+    finally {
         echo "Build completed"
     }
     
