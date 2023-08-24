@@ -12,8 +12,8 @@ pipeline {
         stage('Set Script Permissions') {
             steps {
                 // Set execute permissions for the scripts
-                sh "chmod +x ./Scripts/myscript.sh"
-                sh "chmod +x ./Scripts/myscript1.sh"
+               // sh "chmod +x ./Scripts/myscript.sh"
+              //  sh "chmod +x ./Scripts/myscript1.sh"
             }
         }
 
