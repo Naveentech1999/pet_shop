@@ -62,3 +62,4 @@
             echo "Build is failed"
         }
     }
+ }
